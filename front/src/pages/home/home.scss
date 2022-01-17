@@ -1,0 +1,46 @@
+.home {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  > .content {
+    width: 40%;
+    max-width: 40%;
+    box-shadow: 3px 4px 18px -7px rgba(0, 0, 0, 0.77);
+    padding: 20px;
+    @media screen and (max-width: 700px) {
+      width: 95%;
+      max-width: 95%;
+    }
+    > h1 {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 35px;
+      font-weight: bolder;
+    }
+    > .user {
+      > .name {
+        margin-bottom: 10px;
+        font-size: 18px;
+        > h4 > span {
+          color: rgb(155, 153, 153);
+        }
+      }
+      > .email {
+        margin-bottom: 10px;
+        font-size: 18px;
+        > h4 > span {
+          color: rgb(155, 153, 153);
+        }
+      }
+      > .verifyed {
+        margin-bottom: 10px;
+        font-size: 18px;
+        > h4 > span {
+          color: rgb(155, 153, 153);
+        }
+      }
+    }
+  }
+}

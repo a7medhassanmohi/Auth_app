@@ -1,0 +1,70 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(19, 19, 19);
+  padding: 10px 0;
+  > .logo {
+    width: 20%;
+    max-width: 20%;
+    cursor: pointer;
+    @media screen and (max-width: 700px) {
+      width: 0%;
+      max-width: 0%;
+      display: none;
+    }
+    > h4 {
+      @media screen and (max-width: 700px) {
+        font-size: 20px;
+      }
+      color: white;
+      font-size: 35px;
+      font-weight: bolder;
+      margin: 0;
+      > span {
+        color: rgb(52, 52, 243);
+        font-size: 20px;
+        @media screen and (max-width: 700px) {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+  > .link {
+    @media screen and (max-width: 700px) {
+      width: 95%;
+      max-width: 95%;
+    }
+    width: 60%;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    > a {
+      text-decoration: none;
+      color: white;
+      margin: 0 10px;
+      padding: 20px 5px;
+      font-size: clamp(14px, 4vw, 18px);
+      transition: all 0.3s;
+      border-radius: 15px;
+    }
+    > a.active {
+      color: rgb(52, 52, 243);
+    }
+    > button {
+      border: none;
+      outline: none;
+      color: white;
+      margin: 0 10px;
+      padding: 20px 5px;
+      font-size: 15px;
+      transition: all 0.3s;
+      border-radius: 15px;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+}
